@@ -1,0 +1,51 @@
+.hero {
+  background-image: url(../images/fundo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 64px 0 100px;
+  position: relative;
+
+  .container {
+    position: relative;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    content: "";
+    opacity: 0.7;
+  }
+
+  &-logo {
+    margin: 0 auto;
+    display: block;
+    height: 80px;
+  }
+
+  &-text {
+    margin: 64px 0;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    font-weight: 800;
+  }
+
+  @media (max-width: 640px) {
+    padding: 40px 0;
+
+    &-logo {
+      height: 40px;
+    }
+
+    &-text {
+      font-size: 22px;
+      line-height: 24px;
+      margin: 24px 0;
+    }
+  }
+}
