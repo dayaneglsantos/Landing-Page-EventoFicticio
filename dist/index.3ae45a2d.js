@@ -1,0 +1,2 @@
+AOS.init();const e=new Date("Jul 06, 2023 19:00"),t=e.getTime(),n=setInterval(function(){let e=new Date,o=e.getTime(),a=t-o;document.getElementById("contador").innerHTML=`${Math.floor(a/864e5)} dia(s) ${Math.floor(a%864e5/36e5)}hr(s) ${Math.floor(a%36e5/6e4)}min ${Math.floor(a%6e4/1e3)}seg`,a<0&&(clearInterval(n),document.getElementById("contador").innerHTML=`Evento j\xe1 iniciado`)},1e3);
+//# sourceMappingURL=index.3ae45a2d.js.map
